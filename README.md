@@ -6,7 +6,7 @@ Payumoney payment gateway integration for spree
 
 1. Add this extension to your Gemfile with this line:
 
-        gem 'spree_payumoney', :github => 'isantoshsingh/spree_payumoney'
+        gem 'spree_payumoney', :github => 'nishant01/spree_payumoney'
 
 2. Install the gem using Bundler:
 
