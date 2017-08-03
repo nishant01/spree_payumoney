@@ -4,7 +4,7 @@ module Spree
     preference :merchant_id, :string
     preference :secret_key, :string
 
-      
+
     def provider_class
       ::OffsitePayments.integration('Payu_In')
     end
@@ -17,7 +17,7 @@ module Spree
 
     def checksum(items)
       provider_class.checksum(preferred_merchant_id, preferred_secret_key, items)
-    end    
+    end
 
     def auto_capture?
       true
@@ -44,7 +44,7 @@ module Spree
     end
 
     def txnid(order)
-      order.id.to_s + order.number.to_s
+      order.number.to_s
     end
 
     def service_provider
